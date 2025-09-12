@@ -15,11 +15,16 @@ import { Bar } from "react-chartjs-2";
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
 
 const data = {
-  labels: ["Janeiro", "Fevereiro", "Março", "Abril"],
+  labels: ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"],
   datasets: [
     {
       label: "Vendas",
-      data: [12, 19, 3, 5],
+      data: [12, 19, 3, 5,4,5,6,7,8,4,2,7],
+      backgroundColor: "rgba(75, 192, 192, 0.6)"
+    },
+    {
+      label: "Vendas",
+      data: [12, 19, 3, 5,4,5,6,7,8,4,2,7],
       backgroundColor: "rgba(75, 192, 192, 0.6)"
     }
   ]
@@ -33,9 +38,9 @@ const options = {
   }
 };
 
-export default function BarChart() {
+export default function BarTemporalChart() {
   return (
-    <div className="w-7/12 border-2 p-2 m-5">
+    <div className="w-full border-2">
       <Bar data={data} options={options} />
     </div>
   );
