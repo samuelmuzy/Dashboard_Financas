@@ -40,7 +40,7 @@ const options = {
 
 export default function BarTemporalChart() {
   return (
-    <div className="w-full border-2">
+    <div className="w-9/12 border-2 rounded-2xl border-cyan-700">
       <Bar data={data} options={options} />
     </div>
   );

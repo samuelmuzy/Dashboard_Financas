@@ -35,7 +35,7 @@ const options = {
 
 export default function BarChart() {
   return (
-    <div className="w-7/12 border-2 p-2 m-5">
+    <div className="w-7/12 border-2 p-2 m-5 rounded-2xl border-cyan-700">
       <Bar data={data} options={options} />
     </div>
   );

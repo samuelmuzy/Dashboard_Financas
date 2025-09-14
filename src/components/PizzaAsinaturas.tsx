@@ -9,9 +9,8 @@ import {
 } from "chart.js";
 import { Pie } from "react-chartjs-2";
 
-
-export const Pizza = () => {
-    // Registrar módulos necessários do Chart.js
+export const PizzaAsinaturas = () =>{
+       // Registrar módulos necessários do Chart.js
     ChartJS.register(ArcElement, Title, Tooltip, Legend);
 
     const data = {
@@ -34,7 +33,7 @@ export const Pizza = () => {
     };
 
     return (
-        <div className="w-4/12 border-2 rounded-2xl border-cyan-700 p-2 m-2">
+        <div className="w-4/12 border-2 p-2 m-2 rounded-2xl border-cyan-700">
             <Pie data={data} options={options} />
         </div>
     );
